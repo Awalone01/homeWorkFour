@@ -9,26 +9,30 @@ public class Main {
 
 	    while (i < 10){
             i++;
-            System.out.print(i);
+            System.out.print(i + " ");
         }
         System.out.println();
 	    for (int b = 10; b > 0; b--) {
-            System.out.print(b);
+            System.out.print(b + " ");
         }
         System.out.println();
 
 	    //задача 2
-        int friday = 5;
+        int firstFriday = 3;
 
-	    for (; friday < 31; friday = friday + 7) {
-            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+	    for (; firstFriday <= 31; firstFriday += 7) {
+            System.out.println("Сегодня пятница, " + firstFriday + "-е число. Необходимо подготовить отчет.");
         }
 
 	    //задача 3
-        int year;
+        int presentYear = 2021;
+	    int pastYear = presentYear - 200;
+	    int futureYear = presentYear + 100;
 
-        for (year = 1821; year < 2121; year = year + 79) {
-            System.out.println(year);
+        for (int j = pastYear; j < futureYear; j++) {
+            if (j % 79 == 0) {
+                System.out.println(j);
+            }
         }
 
     }
